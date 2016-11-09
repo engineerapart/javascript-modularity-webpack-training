@@ -2,23 +2,23 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <script type="text/javascript" data-main="scripts/main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.js"></script>
+    <script type="text/javascript" data-main="app" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.2/require.js"></script>
     <script type="text/javascript" src="scripts/init.js"></script>
     <script type="text/javascript" src="scripts/scripts.js"></script>
     <script type="text/javascript" src="scripts/inputs.js"></script>
     <title>My First HTML Page</title>
   </head>
-  <body onload="init();">
+  <body>
     <div class="container">
       <div class="column-left">
         <h1>So meta.</h1>
         <h2>This template actually came from a website that hasn't been updated since 2001. </h2>
 
         <p class="meta">Let's input some text:</p>
-        <input type="text" name="favorite-food" value="" onkeypress="changeText(event, this);" />
+        <input type="text" name="favorite-food" value="" id="favorite-food"/>
 
         <p>Use the + and - keys to increase/decrease the counter.<p>
-        <select id="counter" onkeypress="OnKeyPressCounter(event, this)" style="width:80px"></select>
+        <select id="counter" style="width:80px"></select>
       </div>
 
       <div class="column-right">
