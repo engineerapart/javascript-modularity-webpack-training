@@ -1,23 +1,23 @@
 define(function () {
     return {
-      OnKeyPressCounter: function(event, counter) {
+      OnKeyPressCounter: function(event) {
         var chCode = ('charCode' in event) ? event.charCode : event.keyCode;
 
         if (chCode == 43 /* + */) {
-          if (counter.selectedIndex < counter.options.length - 1) {
-            counter.selectedIndex++;
+          if (this.selectedIndex < this.options.length - 1) {
+            this.selectedIndex++;
           }
         }
         if (chCode == 45 /* - */) {
-          if (counter.selectedIndex > 0) {
-            counter.selectedIndex--;
+          if (this.selectedIndex > 0) {
+            this.selectedIndex--;
           }
         }
       },
 
-      changeText: function(event, obj) {
+      changeText: function(event) {
         var echoEl = document.getElementById('echo-box');
-        echoEl.innerText = obj.value + event.key;
+        echoEl.innerText = this.value + event.key;
       },
     };
 });
