@@ -1,0 +1,24 @@
+.container {
+  height: 460px;
+}
+
+.column-left {
+  padding: 15px;
+  width:47%;
+  float:left;
+  height:100%;
+}
+
+.column-right {
+  padding: 15px;
+  width:47%;
+  float:left;
+  border: 0px solid #ccc;
+  border-left-width:1px;
+  height:100%;
+}
+
+.meta {
+  color: red;
+  font-size:16px;
+}
