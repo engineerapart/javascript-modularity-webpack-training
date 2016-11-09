@@ -1,0 +1,19 @@
+html, body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+.animated-image {
+  border: 2px solid #c0f;
+  display: inline-block;
+
+  & img {
+    display: inline-block;
+  }
+
+  .animaged-image-inner {
+    background-color: #c4c4c4;
+    display: inline-block;
+  }
+}
