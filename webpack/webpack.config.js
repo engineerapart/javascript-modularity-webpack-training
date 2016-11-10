@@ -10,8 +10,10 @@ module.exports = {
   ],
   output: {
       publicPath: '/',
+      path: path.join(__dirname, '../', 'dist'),
       filename: 'main.js'
   },
+  target: 'node',
   debug: true,
   devtool: 'source-map',
   module: {
@@ -20,6 +22,7 @@ module.exports = {
         test: /\.js$/,
         include: path.join(__dirname, 'src'),
         loader: 'babel-loader',
+        exclude: /node_modules/,
         query: {
           presets: ['es2015']
         }
